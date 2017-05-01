@@ -37,7 +37,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
+        //SetMapType values = MAP_TYPE_HYBRID, MAP_TYPE_NORMAL, MAP_TYPE_SATELLITE, MAP_TYPE_TERRAIN, MAP_TYPE_NONE
+        //mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         // Add a marker in Sydney and move the camera
         LatLng leMonde = new LatLng(40.6004221,22.9538704);
         mMap.addMarker(new MarkerOptions().position(leMonde).title("Marker for leMonde"));
